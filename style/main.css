@@ -293,7 +293,7 @@ a {
             font-size: 20px;
           }
           span {
-            @media(max-width:776px) {
+            @media (max-width: 776px) {
               color: var(--mainColor);
             }
           }
@@ -1041,9 +1041,32 @@ footer {
       }
       div {
         h2 {
+          display: flex;
+          align-items: center;
+          gap: 10px;
           i {
             margin-right: 5px;
           }
+          a {
+            text-decoration: none;
+            .whatsapp {
+              color: #25d366;
+              font-size: 30px;
+              transition: var(--trans);
+              &:hover {
+                transform: translateY(-5px);
+              }
+            }
+            .email {
+              font-size: 28px;
+              color: #ea4335;
+              transition: var(--trans);
+              &:hover {
+                transform: translateY(-5px);
+              }
+            }
+          }
+
           font-size: 20px;
           margin: 0 0 10px 0;
           color: var(--whiteColor);
@@ -1255,9 +1278,7 @@ footer {
   rotate: 180deg;
 }
 
-
-@media (max-width:776px) {
-
+@media (max-width: 776px) {
   .navbar {
     .container {
       .list {
@@ -1275,5 +1296,4 @@ footer {
       }
     }
   }
-
 }
